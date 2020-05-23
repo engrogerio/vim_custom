@@ -1,5 +1,6 @@
 set nocompatible              " required
 filetype off                  " required
+set spell
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -16,8 +17,7 @@ Plugin 'gmarik/Vundle.vim'
 
 " ...
 
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
+
 filetype plugin indent on    " required
 
 set splitbelow
@@ -107,4 +107,9 @@ set clipboard=unnamed
 
 Plugin 'ap/vim-css-color'
 
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
 "run :PluginInstall
+
+" Ctrl+i to insert one char
+nnoremap <C-I> i <ESC>r
